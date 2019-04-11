@@ -14,7 +14,7 @@ var Logger *logrus.Logger
 
 func init() {
 	Logger = logrus.New()
-	Logger.Formatter = &logrus.TextFormatter{DisableColors: true}
+	Logger.Formatter = &logrus.TextFormatter{DisableColors: false}
 }
 
 // Setup configures the logger based on options in the config.json.
